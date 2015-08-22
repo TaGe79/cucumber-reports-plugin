@@ -1,3 +1,8 @@
+## This repository is no longer maintained. Please refer to current [cucumber reports](https://github.com/damianszczepanik/cucumber-reporting) project or [plugin for Jenkins](https://github.com/damianszczepanik/cucumber-reporting-jenkins)
+
+
+
+
 # Publish pretty [cucumber-jvm](https://github.com/cucumber/cucumber-jvm) reports on [Jenkins](http://jenkins-ci.org/)
 
 This is a Java Jenkins plugin which publishes pretty html reports showing the results of cucumber-jvm runs. It also works for the ruby versions of cucumber - not just the cucumber-jvm. To use with regular cucumber just make sure to run cucumber like this: cucumber --format json -o cucumber.json
