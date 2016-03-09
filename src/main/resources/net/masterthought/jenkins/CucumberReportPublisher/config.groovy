@@ -18,6 +18,14 @@ f.advanced(field:"help") {
         f.textbox()
     }
 
+    f.entry(title: _("hasRerun.name"), description: _("hasRerun.description"), field: "hasRerun") {
+        f.checkbox()
+    }
+    f.entry(title: _("rerunJsonReportDirectory.name"), description: _("rerunJsonReportDirectory.description"),
+            field: "rerunJsonReportDirectory") {
+        f.textbox()
+    }
+
     f.entry(title:_("skippedFails.name"), description:_("skippedFails.description"), field:"skippedFails") {
         f.checkbox()
     }

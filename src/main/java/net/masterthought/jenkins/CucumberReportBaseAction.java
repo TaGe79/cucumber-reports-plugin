@@ -1,21 +1,19 @@
 package net.masterthought.jenkins;
 
-import java.io.File;
-import java.io.IOException;
-
-import javax.servlet.ServletException;
-
-import org.kohsuke.stapler.StaplerRequest;
-import org.kohsuke.stapler.StaplerResponse;
-
 import hudson.FilePath;
 import hudson.model.Action;
 import hudson.model.DirectoryBrowserSupport;
+import org.kohsuke.stapler.StaplerRequest;
+import org.kohsuke.stapler.StaplerResponse;
+
+import javax.servlet.ServletException;
+import java.io.File;
+import java.io.IOException;
 
 public abstract class CucumberReportBaseAction implements Action {
 
     protected static final String BASE_URL = "cucumber-html-reports";
-
+    protected static final String BASE_RERUN_URL = "cucumber-rerun-html-reports";
     private static final String DEFAULT_PAGE = "feature-overview.html";
 
     public String getUrlName() {
