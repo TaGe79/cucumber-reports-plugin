@@ -21,6 +21,10 @@
         <tag>HEAD</tag>
     </scm>
 
+    <properties>
+        <nexus.path>http://gd0srv35:8081/nexus/content</nexus.path>
+    </properties>
+
     <description>
         This project provides pretty html reports for Cucumber. It works by generating html from the cucumber json
         report formatter. So can be used anywhere a json report is generated. Current use is in the cucumber jenkins
@@ -105,4 +109,17 @@
             <version>1.3.2</version>
         </dependency>
     </dependencies>
+
+    <distributionManagement>
+        <repository>
+            <id>releases</id>
+            <name>Internal Releases</name>
+            <url>${nexus.path}/repositories/releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>Internal Snapshots</name>
+            <url>${nexus.path}/repositories/snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
 </project>
